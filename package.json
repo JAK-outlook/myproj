@@ -9,7 +9,7 @@
   },
   "keywords": [],
   "author": "JAK",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "config": "^3.2.2",
