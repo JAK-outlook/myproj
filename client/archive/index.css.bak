@@ -1,0 +1,147 @@
+/*----------------------------------------------
+[Table of contents]
+1. Body
+2. Login
+3. Register
+-----------------------------------------------*/
+
+/*----------------------------------------------
+[Fonts]
+Base Fonts(Headings & Content) 1 : OpenSans
+Icon Fonts                       : Fontawesome
+-----------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
+
+body{ overflow-x: hidden; font-family: 'Open Sans', sans-serif;}
+
+main{ background: #0093FF; }
+
+.register-section, .login-section, .authenticate{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-content: center;
+  align-content: center;
+  height: 100vh;
+}
+
+
+
+.nav-link{
+  background: #29A4FF;
+  color:#fff!important;
+  border-radius:5px;
+}
+
+.register-section h3, .login-section h3{
+  font-size:30px;
+  color:#fff;
+  text-align: center;
+  margin-bottom:30px;
+  font-weight:500;
+}
+
+.authenticate h3{
+  font-size:30px;
+  color:#fff;
+  text-align: center;
+  font-weight:500;
+}
+
+.contact__form{ 
+  padding:50px;
+  border-radius:35px;
+}
+input:focus , button:focus, .btn:focus , textarea{  box-shadow: none!important; color:#fff!important; }
+.form-control{
+  border:none!important;
+  border-radius: 0px!important;
+  outline: none; 
+  background:rgba(255, 255, 255, 0.15)!important;
+  color:#fff!important;
+  font-weight:300;
+  font-size:12px;
+  line-height:20px;
+}
+.smt-btn{
+  font-size: 18px;
+  color: #29A4FF!important;
+  line-height: 24px;
+  background-color: #fff!important;
+  border: 1px solid #fff!important;;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.16)!important;
+  padding: 0;
+  align-items: center!important;
+  border-radius: 50px!important;
+  min-width: 124px!important;
+  height: 44px!important;
+  text-align: center!important;
+  display: inline-block!important;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */ color: #fff!important; font-size: 16px; }
+::-moz-placeholder { /* Firefox 19+ */ color: #fff!important; font-size: 16px; }
+:-ms-input-placeholder { /* IE 10+ */ color: #fff!important; font-size: 16px; }
+:-moz-placeholder { /* Firefox 18- */ color: #fff!important; font-size: 16px; }
+
+.log-sign{ margin-bottom:30px;}
+
+.log-sign a{ position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+  font-size: 16px;
+  margin-right: 20px;
+text-align: center;
+}
+
+.log-sign a.active{
+  border-bottom:2px solid #fff;
+  font-weight: 600;
+}
+
+@media(max-width:768px){
+  .contact__form{
+    padding:0px;
+  }
+}
+
+.loader {
+  border: 5px solid #33a4ff;
+  border-radius: 50%;
+  border-top: 5px solid #fff;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
+}
+
+.loaderholder {
+  position: relative;
+  display: inline-block;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+.loaderholdermain {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #0006;
+  text-align: center;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

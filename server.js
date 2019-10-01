@@ -5,10 +5,12 @@ const app = express();
 // this is good to use for Heroku deployment to get the port
 const PORT = process.env.PORT || 5000;
 
-// connect to database
+// connect to database (from db.js)
 connectDB();
 
 // initialize middleware
+// we used to have to install body-parser, but now it is a built-in middleware 
+// function of express! It parses incoming JSON payloads
 app.use(express.json({ extended: false }));
 
 // just a test route for now
